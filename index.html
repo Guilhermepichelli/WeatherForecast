@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://source.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Weather forecast</title>
+</head>
+
+<body>
+    <div class="container">
+        <input class="input-city" placeholder="Enter your city"
+            onkeydown="if (event.key === 'Enter') { clickButton(); }">
+        <button class="button" onclick="clickButton()">
+            <img class="glass" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+
+        <div class="mid-section">
+            <h2 class="city title">Tokyo in weather</h2>
+            <div class="minor-section">
+                <p class="temperature">28°C</p>
+                <p class="description"><img class="icon-glass" src="https://openweathermap.org/img/wn/04n.png">Scattered
+                    Clouds</p>
+                <p class="humidity">Humidity: 70%</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
